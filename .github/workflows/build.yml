@@ -36,6 +36,7 @@ jobs:
           
       - name: Build
         run: |
+          echo $NBT_HOME
           dotnet clean
           dotnet restore
           dotnet build -c Release -o .build/
