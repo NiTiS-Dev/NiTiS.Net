@@ -32,11 +32,22 @@ jobs:
       - name: Build
         run: |
           echo $NBT_HOME
+<<<<<<< Updated upstream
           dotnet clean
           dotnet restore
           dotnet build -c Release -o .build/
+=======
+          cd Source/
+          dotnet clean
+          dotnet restore
+          dotnet build -c Release -o ../.build/
+>>>>>>> Stashed changes
           
       - name: Artifact Pack 
         uses: actions/upload-artifact@v2
         with:
+<<<<<<< Updated upstream
           path: .build/*.dll
+=======
+          path: .build/*.dll
+>>>>>>> Stashed changes
