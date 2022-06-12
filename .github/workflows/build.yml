@@ -24,4 +24,6 @@ jobs:
           git clone "https://github.com/NiTiS-Dev/NiTiS-Dev.github.io.git" "NiTiS-Site"
           cd NiTiS-Site
           export NBT_HOME=. 
+          echo $NBT_HOME
+          set
           
