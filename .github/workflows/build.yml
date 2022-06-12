@@ -23,8 +23,11 @@ jobs:
           cd ..
           git clone "https://github.com/NiTiS-Dev/NiTiS-Dev.github.io.git" "NiTiS-Site"
           cd NiTiS-Site/buildtools
-          export NBT_HOME=$(pwd)
+          export NBT_HOME=$pwd
+          echo ---------------
           echo $NBT_HOME
+          echo ---------------
+          set 
           
       - name: Install DotNet v6
         uses: actions/setup-dotnet@v1
