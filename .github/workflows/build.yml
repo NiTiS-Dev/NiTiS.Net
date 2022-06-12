@@ -33,6 +33,8 @@ jobs:
           
       - name: Build
         run: |
+          dotnet clean
+          dotnet restore
           dotnet build -c Release -o .build/
           
       - name: Artifact Pack 
