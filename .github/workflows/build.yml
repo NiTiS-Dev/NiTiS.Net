@@ -22,8 +22,15 @@ jobs:
         run: |
           cd ..
           git clone "https://github.com/NiTiS-Dev/NiTiS-Dev.github.io.git" "NiTiS-Site"
-          cd NiTiS-Site
+          cd NiTiS-Site/buildtools
           export NBT_HOME=$(pwd)
           echo $NBT_HOME
-          set
           
+      - name: Build
+        run: |
+          dotnet build -c Release -o .build/
+          
+      - name: Artifact Pack 
+        uses: actions/upload-artifact@v2
+        with:
+          path: .build/*.dll
