@@ -14,5 +14,10 @@
 		<NBT_Frameworks>net6.0;netstandard2.1;netcoreapp3.1;net5.0</NBT_Frameworks>
 		<NBT_Nullable>enable</NBT_Nullable>
 	</PropertyGroup>
+	
+	<PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+		<ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+	</PropertyGroup>
+	
 	<Import Project="$(NBT_HOME)/csharp/v1.1/post.xml" />
 </Project>
