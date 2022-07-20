@@ -7,6 +7,8 @@
 		<NBT_Summary>
 			The NiTiS library for interaction with web
 		</NBT_Summary>
+		
+		<RepositoryUrl>https://github.com/NiTiS-Dev/NiTiS.Net</RepositoryUrl>
 
 		<NBT_Tabs>NiTiS;Net;Web</NBT_Tabs>
 		<NBT_Frameworks>net6.0;netstandard2.1;netcoreapp3.1;net5.0</NBT_Frameworks>
