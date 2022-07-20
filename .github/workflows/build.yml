@@ -33,9 +33,8 @@ jobs:
         run: |
           echo $NBT_HOME
           cd Source/
-          dotnet restore
-          dotnet build -c Release -o ../.build/
-          dotnet pack -c Release -o ../.pack/
+          dotnet build /m:1 -c Release -o ../.build/ 
+          dotnet pack /m:1 -c Release -o ../.pack/
           
       - name: Artifact Pack 
         uses: actions/upload-artifact@v2
