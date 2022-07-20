@@ -36,8 +36,23 @@ jobs:
           dotnet clean
           dotnet restore
           dotnet build -c Release -o ../.build/
+          dotnet pack -c Release -o ../.pack/
           
       - name: Artifact Pack 
         uses: actions/upload-artifact@v2
         with:
           path: .build/*.dll
+
+      - name: Github Upload
+        run: |
+          cd .pack/
+          dotnet nuget push *.nupkg --source https://nuget.pkg.github.com/acraven/index.json --api-key ${GITHUB_TOKEN} --skip-duplicate
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Nuget Upload
+        run: |
+          cd .pack/
+          dotnet nuget push *.nupkg --source https://api.nuget.org/v3/index.json --api-key ${NUGET_TOKEN} --skip-duplicate
+        env:
+          NUGET_TOKEN: ${{ secrets.NUGET_TOKEN }}
