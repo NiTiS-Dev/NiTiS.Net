@@ -3,14 +3,14 @@
 	<PropertyGroup>
 		<NBT_Name>NiTiS.Net</NBT_Name>
 		<NBT_Singleframe>false</NBT_Singleframe>
-		<NBT_Version>0.0.0.3</NBT_Version>
+		<NBT_Version>0.0.1</NBT_Version>
 		<NBT_Summary>
 			The NiTiS library for interaction with web
 		</NBT_Summary>
 		
 		<RepositoryUrl>https://github.com/NiTiS-Dev/NiTiS.Net</RepositoryUrl>
 
-		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageLicenseUrl>https://github.com/NiTiS-Dev/NiTiS.Net/blob/singleton/LICENSE.md</PackageLicenseUrl>
 
 		<NBT_Tabs>NiTiS;Net;Web</NBT_Tabs>
 		<NBT_Frameworks>net6.0;netstandard2.1;netcoreapp3.1;net5.0</NBT_Frameworks>
