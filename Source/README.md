@@ -1,2 +1,2 @@
 # NiTiS.Net
-The NiTiS library usage for interaction with web
+The NiTiS library for interaction with web
