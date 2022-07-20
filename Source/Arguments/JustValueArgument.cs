@@ -18,6 +18,6 @@ public class JustValueArgument : IArgument
 		=> new(name, spliterator, item.ToString(format, formatProvider));
 
 	/// <inheritdoc/>
-	public string Create()
+	public string Create(uint position)
 		=> Name + Spliterator + Value;
 }
