@@ -5,7 +5,7 @@
 		<NBT_Singleframe>false</NBT_Singleframe>
 		<NBT_Version>0.0.0.2</NBT_Version>
 		<NBT_Summary>
-			The NiTiS library usage for interaction with web
+			The NiTiS library for interaction with web
 		</NBT_Summary>
 
 		<NBT_Tabs>NiTiS;Net;Web</NBT_Tabs>
